@@ -2,7 +2,7 @@
 
 export default function FeaturedProduct() {
   return (
-    <div className='py-28'>
+    <div className='py-20 md:py-28'>
       <div className='flex flex-col gap-10 md:w-9/12 z-10 mx-auto px-5'>
         <div className=' space-y-4'>
           <h1 className='text-4xl md:text-5xl font-sans font-semibold text-gray-800'>

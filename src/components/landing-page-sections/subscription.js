@@ -115,7 +115,7 @@ export default function Subscription() {
   }))
 
   return (
-    <div className='hero pt-20 text-white'>
+    <div className='hero pt-20 text-white h-[70rem] md:h-[72rem]'>
       <div className='flex flex-col gap-10 lg:w-9/12 z-10 mx-auto px-5'>
         <div className='space-y-4 pb-5'>
           <h1 className='text-5xl md:text-6xl font-sans font-semibold'>
