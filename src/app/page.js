@@ -1,9 +1,13 @@
 /** @format */
 
-import Navbar from "@/components/navigation/navbar";
+import FeaturedProduct from '@/components/landing-page-sections/featured-products'
+import Subscription from '@/components/landing-page-sections/subscription'
 
 export default function Home() {
-  return <div>
-    <Navbar />
-  </div>
+  return (
+    <div className='bg-white text-white'>
+      <Subscription />
+      <FeaturedProduct />
+    </div>
+  )
 }

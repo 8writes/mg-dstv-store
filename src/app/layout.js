@@ -1,29 +1,32 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+/** @format */
+
+import { Geist, Geist_Mono } from 'next/font/google'
+import './globals.css'
+import Navbar from '@/components/navigation/navbar'
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+})
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
 
 export const metadata = {
-  title: "MicgrandDSTV",
-  description: "",
-};
+  title: 'MicgrandDSTV',
+  description: '',
+}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} bg-white antialiased`}>
+        <Navbar />
         {children}
       </body>
     </html>
-  );
+  )
 }
