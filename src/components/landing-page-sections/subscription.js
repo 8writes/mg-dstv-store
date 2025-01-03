@@ -52,7 +52,7 @@ const CustomDropdown = ({ label, options, value, onChange, name }) => {
           </span>
         </button>
         {isOpen && (
-          <ul className='absolute max-h-44 overflow-y-auto z-10 mt-1 w-full bg-white border border-gray-300 rounded shadow-lg'>
+          <ul className='absolute max-h-48 overflow-y-auto z-10 mt-1 w-full bg-white border border-gray-300 rounded shadow-lg'>
             {options.map((option, index) => (
               <li
                 key={index}
